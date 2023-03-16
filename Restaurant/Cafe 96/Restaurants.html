@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="Restaurants.css">
+    
+    <title>Food</title>
+</head>
+<body>
+    <div>
+        <header>
+            <img id="logo" src="photos\WhatsApp Image 2023-03-14 at 12.51.37 AM.jpeg" alt="">
+            <h1>RESTAURANTS</h1>
+            
+        </header>
+        
+    </div>
+    
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <div class="slide first">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTBCIAuqj_yN7Wulvu2MTfaV2oI2l_-wUSA" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://4.imimg.com/data4/MX/SH/ANDROID-45759449/product-500x500.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.squarespace-cdn.com/content/v1/56f2595e8a65e2db95a7d983/1519814121668-P25TLTRRAFOBH3YQH96O/Workplace+Canteens+%281%29.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://www.businessnews.com.ph/wp-content/uploads/2019/04/canteen.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://curlytales.com/wp-content/uploads/2019/08/college-canteen.jpeg" alt="">
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+            
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if(counter > 5){
+                counter=1;
+            }
+        }, 5000);
+    </script>
+    <section>
+        <div class="select">
+            <h2>Cafe 96</h2>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">return</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+    
+</body>
+</html>
